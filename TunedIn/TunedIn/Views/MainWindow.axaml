@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:views="using:TunedIn.Views"
+    xmlns:vm="using:TunedIn.ViewModels"
+    x:Class="TunedIn.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    Width="1200" Height="800" Title="TunedIn">
+
+  <Window.DataTemplates>
+    <DataTemplate DataType="vm:MusicLibraryViewModel">
+      <views:MusicLibraryView/>
+    </DataTemplate>
+  </Window.DataTemplates>
+
+  <ContentControl Content="{Binding ContentViewModel}" />
+</Window>
