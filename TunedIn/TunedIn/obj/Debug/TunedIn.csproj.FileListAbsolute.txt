@@ -51,3 +51,4 @@ C:\Users\kiluu\OneDrive\Documents\AppDev\TunedIn\TunedIn\obj\Debug\TunedIn.Selec
 C:\Users\kiluu\OneDrive\Documents\AppDev\TunedIn\TunedIn\obj\Debug\TunedIn.SelectSongsForm.fr-FR.resources
 C:\Users\kiluu\OneDrive\Documents\AppDev\TunedIn\TunedIn\obj\Debug\TunedIn.CreatePlaylistForm.es-ES.resources
 C:\Users\kiluu\OneDrive\Documents\AppDev\TunedIn\TunedIn\obj\Debug\TunedIn.CreatePlaylistForm.fr-FR.resources
+C:\Users\kiluu\OneDrive\Documents\AppDev\TunedIn\TunedIn\bin\Debug\System.Data.SQLite.dll

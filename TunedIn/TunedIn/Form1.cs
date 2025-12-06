@@ -18,6 +18,7 @@ namespace TunedIn
         private IWavePlayer waveOut;
         private AudioFileReader audioFile;
         private Song currentSong = null;
+        private bool handlingPlaybackCompletion = false;
 
         // Playback State Management
         private int currentSongIndex = -1;
@@ -29,10 +30,11 @@ namespace TunedIn
         public List<Playlist> Playlists = new List<Playlist>();
         private string currentSortColumn = "Title";
         private ListSortDirection sortDirection = ListSortDirection.Ascending;
-
+        
         public TuneInForm()
         {
             InitializeComponent();
+ 
             ShowView("library");
             dgvMusicLibrary.ColumnHeaderMouseClick += dgvMusicLibrary_ColumnHeaderMouseClick;
 
@@ -43,7 +45,7 @@ namespace TunedIn
             // Hook up the FormClosing event for proper resource cleanup
             this.FormClosing += TuneInForm_FormClosing;
         }
-        // to show the panel based on button clicked
+
         private void ShowView(string viewName)
         {
             musicLibraryViewPanel.Visible = false;
@@ -161,33 +163,17 @@ namespace TunedIn
         // Logic for when a song finishes playing
         private void WaveOut_PlaybackStopped(object sender, StoppedEventArgs e)
         {
-            // Important: StopPlayback is called internally by WaveOutEvent
+            if (handlingPlaybackCompletion)
+            {
+                return;
+            }
             // Check if the stopping was due to an error
             if (e.Exception != null)
             {
                 MessageBox.Show($"Playback error: {e.Exception.Message}");
+                StopPlayback();
+                ResetPlaybackUI();
                 return;
-            }
-
-            if (isRepeatOn)
-            {
-                // Restart the current song
-                PlaySong(currentSongIndex);
-            }
-            else
-            {
-                // Play the next song in the queue
-                currentSongIndex++;
-                if (currentSongIndex < currentQueue.Count)
-                {
-                    PlaySong(currentSongIndex);
-                }
-                else
-                {
-                    // End of queue
-                    StopPlayback();
-                    songInfoLabel.Text = "Queue Finished";
-                }
             }
         }
         private Song GetSongMetadata(string filePath)
@@ -395,24 +381,84 @@ namespace TunedIn
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            if (currentSong == null || currentSongIndex == -1) return;
-
-            // Stop playback immediately if we're at the end of the queue
-            if (currentSongIndex >= currentQueue.Count - 1)
+            // Ensure there is an active queue and something is playing
+            if (currentQueue == null || currentQueue.Count == 0)
             {
-                StopPlayback();
-                songInfoLabel.Text = "Queue Finished";
+                ResetPlaybackUI();
                 return;
             }
+            currentSongIndex++;
+            if (currentSongIndex < currentQueue.Count)
+            {
+                // If there is a next song, play it
+                PlaySong(currentSongIndex);
+            }
+            else
+            {
+                // Reached end of queue
+                StopPlayback();
+                ResetPlaybackUI();
+                currentSongIndex = -1;
+                songInfoLabel.Text = "The End of the Queue";
+            }
+        }
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            // Ensure something is playing
+            if (currentQueue == null || currentQueue.Count == 0)
+            {
+                ResetPlaybackUI();
+                return;
+            }
+            // Check if we're more than 3 seconds into the current song
+            if (audioFile != null && audioFile.CurrentTime.TotalSeconds > 3)
+            {
+                // Restart the current song
+                PlaySong(currentSongIndex);
+            }
+            else
+            {
+                // Go to previous song
+                currentSongIndex--;
+                if (currentSongIndex < 0)
+                {
+                    // If at the beginning, wrap to the first song (or you could wrap to the last)
+                    currentSongIndex = 0;
+                }
+                PlaySong(currentSongIndex);
+            }
+        }
+        private void ResetPlaybackUI()
+        {
+            if (playbackTimer != null) // Assuming you have a playbackTimer 
+            {
+                playbackTimer.Stop();
+            }
+            // Reset core state
+            isPlaying = false;
+            currentSong = null;
+            currentSongIndex = -1;
+            // Reset UI elements 
+            songInfoLabel.Text = "No music playing";
 
-            PlaySong(currentSongIndex + 1);
+            progressBarTrackBar.Value = 0;
+            playPauseButton.Text = "▶"; // Set button to Play icon
+            albumArtPictureBox.Image = null;
+        }
+        private void dgvPlaylistSongs_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            currentQueue = MusicLibrary;
+            currentSongIndex = e.RowIndex;
+            PlaySong(currentSongIndex);
         }
 
         private void repeatButton_Click(object sender, EventArgs e)
         {
-            isRepeatOn = !isRepeatOn;
-            // Visually indicate repeat is on (e.g., change button color/icon)
-            repeatButton.BackColor = isRepeatOn ? Color.MediumPurple : SystemColors.Control;
+            if (currentSongIndex >= 0 && currentQueue != null && currentQueue.Count > 0)
+            {
+                PlaySong(currentSongIndex);
+            }
         }
 
         private void volumeTrackBar_Scroll(object sender, EventArgs e)
@@ -436,6 +482,43 @@ namespace TunedIn
                 // Update time elapsed label (format M:SS)
                 TimeSpan currentTime = audioFile.CurrentTime;
                 timeElapsedLabel.Text = $"{(int)currentTime.TotalMinutes}:{currentTime.Seconds:D2}";
+
+                // Check if song has finished (with small buffer to avoid timing issues)
+                if (audioFile.CurrentTime >= audioFile.TotalTime.Subtract(TimeSpan.FromMilliseconds(100)))
+                {
+                    // Stop the timer to prevent immediate re-entry
+                    playbackTimer.Stop();
+
+                    // Set flag to prevent WaveOut_PlaybackStopped from interfering
+                    handlingPlaybackCompletion = true;
+
+                    // Repeat current song
+                    if (isRepeatOn)
+                    {
+                        // Restart the current song by calling PlaySong with the current index
+                        PlaySong(currentSongIndex);
+                    }
+                    // Play next song logic
+                    else
+                    {
+                        // Advance to next song
+                        currentSongIndex++;
+                        if (currentSongIndex < currentQueue.Count)
+                        {
+                            PlaySong(currentSongIndex);
+                        }
+                        else
+                        {
+                            // End of queue
+                            StopPlayback();
+                            ResetPlaybackUI();
+                            songInfoLabel.Text = "Queue Finished";
+                        }
+                    }
+
+                    // Reset flag after handling
+                    handlingPlaybackCompletion = false;
+                }
             }
         }
 

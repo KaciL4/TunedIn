@@ -255,6 +255,7 @@
             resources.ApplyResources(this.previousButton, "previousButton");
             this.previousButton.Name = "previousButton";
             this.previousButton.UseVisualStyleBackColor = false;
+            this.previousButton.Click += new System.EventHandler(this.previousButton_Click);
             // 
             // repeatButton
             // 
@@ -345,6 +346,7 @@
             resources.ApplyResources(this.dgvPlaylistSongs, "dgvPlaylistSongs");
             this.dgvPlaylistSongs.Name = "dgvPlaylistSongs";
             this.dgvPlaylistSongs.RowTemplate.Height = 24;
+            this.dgvPlaylistSongs.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPlaylistSongs_CellContentDoubleClick);
             // 
             // addSongsToPlaylistButton
             // 
