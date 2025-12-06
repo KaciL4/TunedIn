@@ -1045,6 +1045,66 @@ Select a song to start playing</value>
   <data name="&gt;&gt;songInfoLabel.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="&gt;&gt;nowPlayingViewPanel.Name" xml:space="preserve">
+    <value>nowPlayingViewPanel</value>
+  </data>
+  <data name="&gt;&gt;nowPlayingViewPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nowPlayingViewPanel.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;nowPlayingViewPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Name" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Name" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="contentPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="contentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 0</value>
+  </data>
+  <data name="contentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1117, 527</value>
+  </data>
+  <data name="contentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Name" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;contentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;noMusicPlayingPanel.Name" xml:space="preserve">
     <value>noMusicPlayingPanel</value>
   </data>
@@ -1100,378 +1160,6 @@ Select a song to start playing</value>
     <value>contentPanel</value>
   </data>
   <data name="&gt;&gt;nowPlayingViewPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;noSelectedPlaylistLb.Name" xml:space="preserve">
-    <value>noSelectedPlaylistLb</value>
-  </data>
-  <data name="&gt;&gt;noSelectedPlaylistLb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;noSelectedPlaylistLb.Parent" xml:space="preserve">
-    <value>noPlaylistSelectedPanel</value>
-  </data>
-  <data name="&gt;&gt;noSelectedPlaylistLb.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="noPlaylistSelectedPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="noPlaylistSelectedPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>889, 527</value>
-  </data>
-  <data name="noPlaylistSelectedPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;noPlaylistSelectedPanel.Name" xml:space="preserve">
-    <value>noPlaylistSelectedPanel</value>
-  </data>
-  <data name="&gt;&gt;noPlaylistSelectedPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;noPlaylistSelectedPanel.Parent" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;noPlaylistSelectedPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dgvPlaylistSongs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="dgvPlaylistSongs.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 134</value>
-  </data>
-  <data name="dgvPlaylistSongs.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dgvPlaylistSongs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 393</value>
-  </data>
-  <data name="dgvPlaylistSongs.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dgvPlaylistSongs.Name" xml:space="preserve">
-    <value>dgvPlaylistSongs</value>
-  </data>
-  <data name="&gt;&gt;dgvPlaylistSongs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvPlaylistSongs.Parent" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;dgvPlaylistSongs.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="addSongsToPlaylistButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="addSongsToPlaylistButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="addSongsToPlaylistButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 77</value>
-  </data>
-  <data name="addSongsToPlaylistButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 37</value>
-  </data>
-  <data name="addSongsToPlaylistButton.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="addSongsToPlaylistButton.Text" xml:space="preserve">
-    <value>+ Add Songs</value>
-  </data>
-  <data name="&gt;&gt;addSongsToPlaylistButton.Name" xml:space="preserve">
-    <value>addSongsToPlaylistButton</value>
-  </data>
-  <data name="&gt;&gt;addSongsToPlaylistButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addSongsToPlaylistButton.Parent" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;addSongsToPlaylistButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="playAllButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="playAllButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="playAllButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 77</value>
-  </data>
-  <data name="playAllButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 37</value>
-  </data>
-  <data name="playAllButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="playAllButton.Text" xml:space="preserve">
-    <value>Play All</value>
-  </data>
-  <data name="&gt;&gt;playAllButton.Name" xml:space="preserve">
-    <value>playAllButton</value>
-  </data>
-  <data name="&gt;&gt;playAllButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playAllButton.Parent" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;playAllButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="playlistNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="playlistNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 13.8pt, style=Bold</value>
-  </data>
-  <data name="playlistNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="playlistNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 16</value>
-  </data>
-  <data name="playlistNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 28</value>
-  </data>
-  <data name="playlistNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="playlistNameLabel.Text" xml:space="preserve">
-    <value>Song Name</value>
-  </data>
-  <data name="&gt;&gt;playlistNameLabel.Name" xml:space="preserve">
-    <value>playlistNameLabel</value>
-  </data>
-  <data name="&gt;&gt;playlistNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistNameLabel.Parent" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistNameLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="playlistDetailPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="playlistDetailPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 0</value>
-  </data>
-  <data name="playlistDetailPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>869, 527</value>
-  </data>
-  <data name="playlistDetailPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;playlistDetailPanel.Name" xml:space="preserve">
-    <value>playlistDetailPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistDetailPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistDetailPanel.Parent" xml:space="preserve">
-    <value>playlistsViewPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistDetailPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playlistsListBox.Name" xml:space="preserve">
-    <value>playlistsListBox</value>
-  </data>
-  <data name="&gt;&gt;playlistsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsListBox.Parent" xml:space="preserve">
-    <value>playlistListPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsListBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;newPlaylistButton.Name" xml:space="preserve">
-    <value>newPlaylistButton</value>
-  </data>
-  <data name="&gt;&gt;newPlaylistButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;newPlaylistButton.Parent" xml:space="preserve">
-    <value>playlistListPanel</value>
-  </data>
-  <data name="&gt;&gt;newPlaylistButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;playlistTitleLabel.Name" xml:space="preserve">
-    <value>playlistTitleLabel</value>
-  </data>
-  <data name="&gt;&gt;playlistTitleLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistTitleLabel.Parent" xml:space="preserve">
-    <value>playlistListPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistTitleLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="playlistListPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="playlistListPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playlistListPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 527</value>
-  </data>
-  <data name="playlistListPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;playlistListPanel.Name" xml:space="preserve">
-    <value>playlistListPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistListPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistListPanel.Parent" xml:space="preserve">
-    <value>playlistsViewPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistListPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="playlistsViewPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="playlistsViewPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="playlistsViewPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1117, 527</value>
-  </data>
-  <data name="playlistsViewPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="playlistsViewPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;playlistsViewPanel.Name" xml:space="preserve">
-    <value>playlistsViewPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsViewPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playlistsViewPanel.Parent" xml:space="preserve">
-    <value>contentPanel</value>
-  </data>
-  <data name="&gt;&gt;playlistsViewPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;infoForSongCountLabel.Name" xml:space="preserve">
-    <value>infoForSongCountLabel</value>
-  </data>
-  <data name="&gt;&gt;infoForSongCountLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;infoForSongCountLabel.Parent" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;infoForSongCountLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryCountLabel1.Name" xml:space="preserve">
-    <value>musicLibraryCountLabel1</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryCountLabel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryCountLabel1.Parent" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryCountLabel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;musicLibLabel.Name" xml:space="preserve">
-    <value>musicLibLabel</value>
-  </data>
-  <data name="&gt;&gt;musicLibLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;musicLibLabel.Parent" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;musicLibLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;importSongBtn.Name" xml:space="preserve">
-    <value>importSongBtn</value>
-  </data>
-  <data name="&gt;&gt;importSongBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;importSongBtn.Parent" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;importSongBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;dgvMusicLibrary.Name" xml:space="preserve">
-    <value>dgvMusicLibrary</value>
-  </data>
-  <data name="&gt;&gt;dgvMusicLibrary.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dgvMusicLibrary.Parent" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;dgvMusicLibrary.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="musicLibraryViewPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="musicLibraryViewPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="musicLibraryViewPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1117, 527</value>
-  </data>
-  <data name="musicLibraryViewPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryViewPanel.Name" xml:space="preserve">
-    <value>musicLibraryViewPanel</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryViewPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryViewPanel.Parent" xml:space="preserve">
-    <value>contentPanel</value>
-  </data>
-  <data name="&gt;&gt;musicLibraryViewPanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="contentPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="contentPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 0</value>
-  </data>
-  <data name="contentPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1117, 527</value>
-  </data>
-  <data name="contentPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;contentPanel.Name" xml:space="preserve">
-    <value>contentPanel</value>
-  </data>
-  <data name="&gt;&gt;contentPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;contentPanel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;contentPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;noMusicLabel.Name" xml:space="preserve">
@@ -1600,6 +1288,174 @@ Select a song to start playing</value>
   <data name="&gt;&gt;albumArtPictureBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="&gt;&gt;playlistDetailPanel.Name" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.Parent" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Name" xml:space="preserve">
+    <value>playlistListPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Parent" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="playlistsViewPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="playlistsViewPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playlistsViewPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1117, 527</value>
+  </data>
+  <data name="playlistsViewPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="playlistsViewPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Name" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistsViewPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Name" xml:space="preserve">
+    <value>noPlaylistSelectedPanel</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Name" xml:space="preserve">
+    <value>dgvPlaylistSongs</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Name" xml:space="preserve">
+    <value>addSongsToPlaylistButton</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Name" xml:space="preserve">
+    <value>playAllButton</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Name" xml:space="preserve">
+    <value>playlistNameLabel</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="playlistDetailPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="playlistDetailPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>248, 0</value>
+  </data>
+  <data name="playlistDetailPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 527</value>
+  </data>
+  <data name="playlistDetailPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.Name" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.Parent" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistDetailPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;noSelectedPlaylistLb.Name" xml:space="preserve">
+    <value>noSelectedPlaylistLb</value>
+  </data>
+  <data name="&gt;&gt;noSelectedPlaylistLb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noSelectedPlaylistLb.Parent" xml:space="preserve">
+    <value>noPlaylistSelectedPanel</value>
+  </data>
+  <data name="&gt;&gt;noSelectedPlaylistLb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="noPlaylistSelectedPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="noPlaylistSelectedPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>889, 527</value>
+  </data>
+  <data name="noPlaylistSelectedPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Name" xml:space="preserve">
+    <value>noPlaylistSelectedPanel</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;noPlaylistSelectedPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="noSelectedPlaylistLb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -1632,6 +1488,186 @@ Select a song to start playing</value>
   </data>
   <data name="&gt;&gt;noSelectedPlaylistLb.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="dgvPlaylistSongs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="dgvPlaylistSongs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 134</value>
+  </data>
+  <data name="dgvPlaylistSongs.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="dgvPlaylistSongs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>869, 393</value>
+  </data>
+  <data name="dgvPlaylistSongs.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Name" xml:space="preserve">
+    <value>dgvPlaylistSongs</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;dgvPlaylistSongs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addSongsToPlaylistButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="addSongsToPlaylistButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="addSongsToPlaylistButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>138, 77</value>
+  </data>
+  <data name="addSongsToPlaylistButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 37</value>
+  </data>
+  <data name="addSongsToPlaylistButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="addSongsToPlaylistButton.Text" xml:space="preserve">
+    <value>+ Add Songs</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Name" xml:space="preserve">
+    <value>addSongsToPlaylistButton</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;addSongsToPlaylistButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="playAllButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="playAllButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="playAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 77</value>
+  </data>
+  <data name="playAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 37</value>
+  </data>
+  <data name="playAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="playAllButton.Text" xml:space="preserve">
+    <value>Play All</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Name" xml:space="preserve">
+    <value>playAllButton</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playAllButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="playlistNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="playlistNameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 13.8pt, style=Bold</value>
+  </data>
+  <data name="playlistNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="playlistNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 16</value>
+  </data>
+  <data name="playlistNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 28</value>
+  </data>
+  <data name="playlistNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="playlistNameLabel.Text" xml:space="preserve">
+    <value>Song Name</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Name" xml:space="preserve">
+    <value>playlistNameLabel</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.Parent" xml:space="preserve">
+    <value>playlistDetailPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistNameLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;playlistsListBox.Name" xml:space="preserve">
+    <value>playlistsListBox</value>
+  </data>
+  <data name="&gt;&gt;playlistsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistsListBox.Parent" xml:space="preserve">
+    <value>playlistListPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistsListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistButton.Name" xml:space="preserve">
+    <value>newPlaylistButton</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistButton.Parent" xml:space="preserve">
+    <value>playlistListPanel</value>
+  </data>
+  <data name="&gt;&gt;newPlaylistButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;playlistTitleLabel.Name" xml:space="preserve">
+    <value>playlistTitleLabel</value>
+  </data>
+  <data name="&gt;&gt;playlistTitleLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistTitleLabel.Parent" xml:space="preserve">
+    <value>playlistListPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistTitleLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="playlistListPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="playlistListPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="playlistListPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 527</value>
+  </data>
+  <data name="playlistListPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Name" xml:space="preserve">
+    <value>playlistListPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.Parent" xml:space="preserve">
+    <value>playlistsViewPanel</value>
+  </data>
+  <data name="&gt;&gt;playlistListPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="playlistsListBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -1727,6 +1763,90 @@ Select a song to start playing</value>
     <value>playlistListPanel</value>
   </data>
   <data name="&gt;&gt;playlistTitleLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;infoForSongCountLabel.Name" xml:space="preserve">
+    <value>infoForSongCountLabel</value>
+  </data>
+  <data name="&gt;&gt;infoForSongCountLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;infoForSongCountLabel.Parent" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;infoForSongCountLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryCountLabel1.Name" xml:space="preserve">
+    <value>musicLibraryCountLabel1</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryCountLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryCountLabel1.Parent" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryCountLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;musicLibLabel.Name" xml:space="preserve">
+    <value>musicLibLabel</value>
+  </data>
+  <data name="&gt;&gt;musicLibLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;musicLibLabel.Parent" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;importSongBtn.Name" xml:space="preserve">
+    <value>importSongBtn</value>
+  </data>
+  <data name="&gt;&gt;importSongBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;importSongBtn.Parent" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;importSongBtn.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgvMusicLibrary.Name" xml:space="preserve">
+    <value>dgvMusicLibrary</value>
+  </data>
+  <data name="&gt;&gt;dgvMusicLibrary.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvMusicLibrary.Parent" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;dgvMusicLibrary.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="musicLibraryViewPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="musicLibraryViewPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="musicLibraryViewPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1117, 527</value>
+  </data>
+  <data name="musicLibraryViewPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Name" xml:space="preserve">
+    <value>musicLibraryViewPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.Parent" xml:space="preserve">
+    <value>contentPanel</value>
+  </data>
+  <data name="&gt;&gt;musicLibraryViewPanel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="infoForSongCountLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -1899,6 +2019,82 @@ Select a song to start playing</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1478, 665</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAemhjAHloZAB6aGMAemhjAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAfHVwAHx2cgqCd3MUe29pGXx0bhh5b2gWeG9pDXpxaw17cWsVfXFqIn5y
+        bCB+dm8XgXt3BYF7dgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////wAP//8AD//4AAD/+AAA//gAAP/wA
+        AH/8P+H///gb///gD///wAf//8AD//+AA///gAH//4AA//+AAP//gAH//4AD//+EQ///wAf//+AH///w
+        H/////////////////////////////////8=
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>TunedIn Application</value>

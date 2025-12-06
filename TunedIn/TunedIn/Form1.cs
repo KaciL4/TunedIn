@@ -258,7 +258,7 @@ namespace TunedIn
                 });
             }
 
-            // 3. Bind the list to the DataGridView
+            // Bind the list to the DataGridView
             dgvMusicLibrary.DataSource = null;
             dgvMusicLibrary.DataSource = MusicLibrary.ToList();
         }
