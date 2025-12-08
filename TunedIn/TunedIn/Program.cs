@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace TunedIn
         /// </summary>
         [STAThread]
         static void Main()
+
         {
             var language = ConfigurationManager.AppSettings["language"];
             if (!string.IsNullOrEmpty(language))

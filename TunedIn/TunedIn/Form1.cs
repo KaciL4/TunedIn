@@ -30,11 +30,19 @@ namespace TunedIn
         public List<Playlist> Playlists = new List<Playlist>();
         private string currentSortColumn = "Title";
         private ListSortDirection sortDirection = ListSortDirection.Ascending;
-        
+
+
+        private readonly DatabaseManager databaseManager;
+
         public TuneInForm()
         {
             InitializeComponent();
- 
+
+            databaseManager = new DatabaseManager();
+            // Load music library from database
+            MusicLibrary = databaseManager.LoadAllSongs();
+            UpdateMusicLibraryDisplay();
+
             ShowView("library");
             dgvMusicLibrary.ColumnHeaderMouseClick += dgvMusicLibrary_ColumnHeaderMouseClick;
 
@@ -282,6 +290,7 @@ namespace TunedIn
                             if (song != null)
                             {
                                 MusicLibrary.Add(song);
+                                databaseManager.InsertSong(song);
                             }
                         }
                     }
@@ -574,21 +583,21 @@ namespace TunedIn
                 }
             }
         }
-       
+
         //method to display songs of selected playlist
         private void playlistsListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (playlistsListBox.SelectedItem is Playlist selectedPlaylist)
             {
                 //Hide the "No Playlist Selected" message
-                noPlaylistSelectedPanel.Visible= false;
+                noPlaylistSelectedPanel.Visible = false;
 
                 //Update the header labels
                 playlistNameLabel.Text = selectedPlaylist.Name;
 
                 // Bind the selected playlist's song list to the DataGridView
-                dgvPlaylistSongs.DataSource =null;
-                dgvPlaylistSongs.DataSource =selectedPlaylist.Songs;
+                dgvPlaylistSongs.DataSource = null;
+                dgvPlaylistSongs.DataSource = selectedPlaylist.Songs;
 
                 // Set up the DataGridView columns (similar to dgvMusicLibrary)
                 if (dgvPlaylistSongs.Columns.Count == 0)
@@ -720,7 +729,8 @@ namespace TunedIn
             var changeLanguage = new ChangeLanguage();
             switch (languageComboBox.SelectedIndex)
             {
-                case 0: changeLanguage.UpdateConfig("language", "en");
+                case 0:
+                    changeLanguage.UpdateConfig("language", "en");
                     Application.Restart();
                     break;
                 case 1:

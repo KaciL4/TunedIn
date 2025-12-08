@@ -1,3 +1,9 @@
 <Solution>
-  <Project Path="TunedIn/TunedIn.csproj" Id="d3eb576b-dfd3-4c82-b1e5-bde66bfd5b06" />
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TunedIn/TunedIn.csproj" Id="d3eb576b-dfd3-4c82-b1e5-bde66bfd5b06">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
 </Solution>
